@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cairo, "sans-serif";
+}
+
+body {
+  background: #f2f5fc;
+  padding: 0;
+}
+
+.searchBar {
+  background-color: white;
+  padding: 16px 50px;
+  position: fixed;
+  top: 0;
+  height: 180px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  z-index: 1;
+}
+form {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  flex-shrink: 0;
+  margin-top: 20px;
+}
+
+form input {
+  border-color: #dde1e6;
+  margin: 0px;
+  padding: 0px 0px 0px 15px;
+  outline: none;
+  top: 15px;
+  font-size: 50px;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: #e7eaf2;
+  width: 880px;
+  height: 100px;
+}
+
+form button {
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #0d1435;
+  color: #fabb27;
+  position: absolute;
+  right: 60px;
+  bottom: 55px;
+  width: 75px;
+  height: 75px;
+}
+.fa-search {
+  font-size: 40px;
+}
+
+.categories {
+  margin-top: 180px;
+  font-size: 55px;
+  background-color: white;
+  margin-right: 0;
+  margin-left: 0;
+  border-bottom: 2px solid grey;
+  overflow: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  position: relative;
+}
+.categories::-webkit-scrollbar {
+  display: none;
+}
+.categories ul {
+  margin: 0;
+  padding: 5px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.categories ul li {
+  display: inline;
+}
+
+.categories ul li a {
+  text-decoration: none;
+  padding: 0.2em 1em;
+  color: #000;
+}
+.children-images {
+  height: 450px;
+  width: 100%;
+  margin-top: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  text-align: center;
+}
+
+.children-images::-webkit-scrollbar {
+  display: none;
+}
+.children-images p {
+  font-size: 45px;
+  line-height: 60px;
+}
+.img-box {
+  width: 250px;
+  height: 250px;
+  margin: 35px;
+}
+
+.fit-picture {
+  height: 100%;
+  border-radius: 25px;
+  border: 8px solid white;
+  position: relative;
+}
+
+.brands {
+  margin-left: 50px;
+  height: 90%;
+  width: 90%;
+}
+.brands-box {
+  margin-bottom: 185px;
+}
+
+footer {
+  position: fixed;
+  bottom: -2px;
+  background-color: white;
+  height: 175px;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+}
+.allbuttons {
+  border: none;
+  height: 120px;
+  width: 115px;
+  color: #0d1435;
+  background-color: transparent;
+  margin-left: 40px;
+  margin-right: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-button {
+  border: none;
+  height: 100px;
+  width: 100px;
+  background-color: #fabb27;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 10px #fabb27;
+  margin-left: 40px;
+  margin-right: 40px;
+  position: relative;
+  bottom: -25px;
+  
+}
+
+.home-button:active {
+  animation: myfirst 0.25s;
+}
+
+@keyframes myfirst {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+button p {
+  font-size: 25px;
+  font-weight: 600;
+}
+.footer-button {
+  font-size: 75px;
+  padding-top: 5px;
+}
+.account-heading {
+  text-align: center;
+  background-color: white;
+  height: 250px;
+  padding-top: 80px;
+  font-size: 55px;
+  font-weight: 700;
+}
+.account-container {
+  background-color: white;
+  border-radius: 40px;
+  margin: 120px 20px 0px 20px;
+  height: 250px;
+}
+.account-container img {
+  border-radius: 40px;
+  position: relative;
+  top: -100px;
+  left: 40px;
+  border: 10px solid white;
+}
+.account-container p {
+  width: 30%;
+  position: relative;
+  left: 350px;
+  bottom: 250px;
+  font-size: 35px;
+}
+.account-container p b {
+  font-size: 45px;
+}
+.account-buttons-container {
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.account-buttons {
+  width: 950px;
+  height: 130px;
+  margin-left: 20px;
+  background-color: white;
+  border: none;
+  font-size: 45px;
+  text-align: left;
+  padding-left: 25px;
+}
+.lower-border {
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.upper-border {
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+.login {
+  border-radius: 35px;
+}
+span {
+  margin-right: 25px;
+}
+.arrow-spacing {
+  position: absolute;
+  right: 50px;
+  margin-top: 20px;
+}
+.stock-buttons{
+  margin-top: 180px;
+}
+.sort-filter{
+  height: 110px;
+  width: 490px;
+  background-color: white ;
+  border: 2px solid #dde1e6;
+  font-size: 50px;
+}
+.favorites-cart{
+  margin-top: 250px;
+  text-align: center;
+  align-items: center;
+}
+.favorites-cart-img{
+font-size: 300px;
+color: grey;
+}
+.favorites-cart h1{
+  font-size: 60px;
+  font-weight: 700;
+  color: grey;
+}
+.favorites-cart button{
+  background-color: #fabb27;
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 35px;
+  border: none;
+  margin-top: 50px;
+}
+.favorites-cart p{
+  font-size: 45px;
+  color: grey;
+  width: 600px;
+  position: relative;
+  left: 200px;
+}
